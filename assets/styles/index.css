@@ -1,0 +1,97 @@
+/* 
+    main-style.css
+    A stylesheet to apply to the main React App without any pre-loading
+    which works even with <noscript>
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.noscript {
+    text-align:center;
+    padding-top:10%;
+}
+
+#mainContainer {
+    margin: 0px;
+    background-color: rgb(152, 96, 255);
+    width:100vw;
+    height:100vh;
+}
+
+#contentContainer {
+    position: fixed;
+    top:40px;
+    left:40px;
+    width: calc(100vw - 80px) !important;
+    height: calc(100vh - 80px) !important;
+    -webkit-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 20px 1px rgb(0, 0, 0);
+    background: white;
+    border-radius:5px;
+}
+
+#menuBar {
+    position: relative;
+    background:rgb(53, 53, 53);
+    width: calc(100% - 40px);
+    padding:20px;
+    padding-top:30px;
+    padding-bottom:28px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom:3px solid grey;
+}
+#menuBar a {
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    border-radius:5px;
+    text-transform: uppercase;
+}
+#menuBar a:hover {
+    background:rgb(238, 238, 238);
+    color:black;
+}
+
+#pageContentContainer {
+    width:calc(100% - 40px);
+    height:calc(100% - 240px);
+    padding:20px;
+    overflow:auto;
+}
+#socialLinksContainer {
+    width:calc(100% - 40px);
+    vertical-align:middle;
+    text-align: center;
+    padding:20px;
+}
+#socialLinksContainer a {
+    text-decoration: none;
+}
+.socialLinkIcon {
+    width: 50px;
+    fill: black;
+}
+
+
+#githubLinkIcon:hover {
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+#linkedInLinkIcon:hover {
+    filter: invert(31%) sepia(85%) saturate(879%) hue-rotate(166deg) brightness(96%) contrast(90%);
+}
+#instagramLinkIcon:hover {
+    filter: invert(32%) sepia(48%) saturate(5595%) hue-rotate(264deg) brightness(77%) contrast(84%);
+}
+#twitterLinkIcon:hover {
+    filter: invert(48%) sepia(94%) saturate(2198%) hue-rotate(179deg) brightness(103%) contrast(90%);
+}
+#emailLinkIcon:hover {
+    filter: invert(33%) sepia(45%) saturate(2829%) hue-rotate(341deg) brightness(96%) contrast(92%);
+}
